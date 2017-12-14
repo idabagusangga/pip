@@ -4,8 +4,8 @@ var router = express.Router();
 const homeController = require('../controller/home')
 
 /* GET home page. */
-// router.get('/', getItems);
-// router.post('/',createItems);
+router.get('/', homeController.findAll);
+router.post('/',homeController.createItems);
 // router.delete('/',destroyItem)
 
 module.exports = router;
