@@ -5,7 +5,7 @@ const homeController = require('../controller/home')
 
 /* GET home page. */
 router.get('/', homeController.findAll);
-router.post('/',homeController.createItems);
+router.post('/',homeController.createItem);
 // router.delete('/',destroyItem)
 
 module.exports = router;

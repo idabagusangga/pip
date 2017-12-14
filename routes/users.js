@@ -4,7 +4,7 @@ var router = express.Router();
 const userController = require('../controller/user')
 
 /* GET home page. */
-router.get('/', userController.getUser);
+router.get('/', userController.findAll);
 router.post('/',userController.createUser);
 // router.delete('/',destroyUser)
 
